@@ -1,0 +1,8 @@
+[
+  {
+    "lambdaNode"  : "1",
+    "sigmaNode"   : "2",
+    "travelTime"  : 231,
+    "type"        : "Flight Path"
+  }
+]
