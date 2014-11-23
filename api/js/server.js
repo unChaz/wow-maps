@@ -1,7 +1,5 @@
 var express = require('express');
-var mongoose = require('mongoose');
 var http = require('http');
-var connectUtils = require('connect/lib/utils');
 var config = require('./config');
 var mapper = require('./mapper');
 var app = express();

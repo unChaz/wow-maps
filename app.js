@@ -1,5 +1,2 @@
-require('classtool');
-
-var API = require('./api/api').class();
-
-new API();
+var server = require('./api/js/server');
+console.log('Started API Server Started');
