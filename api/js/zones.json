@@ -1,0 +1,18 @@
+{
+  "Shadowmoon Valley": {
+    "Gorgrond": {
+      "borderCoordinates": {
+        "x": 35,
+        "y": 64
+      },
+      "travelTime": 235
+    },
+    "Nagrand": {
+      "borderCoordinates": {
+        "x": 35,
+        "y": 64
+      },
+      "travelTime": 235
+    }
+  }
+}

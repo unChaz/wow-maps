@@ -2,38 +2,74 @@ var config       = require('./config');
 var _            = require('underscore');
 var locations    = require('./locations.json');
 var paths        = require('./paths.json');
+var zones        = require('./zones.json');
 var locationsObj = {};
 
 var mapper = {
 
 };
 
-var buildTree = function(nodeId, parentId, depth) {
-  var location = locationsObj[nodeId];
-  var node = {
-    id: nodeId
-  };
+mapper.navigate = function(startNode, destinationNode) {
+  var directions = [];
   
-  if(locationsObj[parentId]) {
-    var path = locationsObj[parentId].paths[nodeId];
-    node.distance = path.travelTime;
-    node.type = path.type;
+  /*
+    A Heuristic to measure the distance from one 
+    node to another that are in the same zone.
+  */
+  var distanceToNode = function(node, otherNode) {
+    var xDelta = (node.xCoord-otherNode.xCoord);
+    var yDelta = (node.yCoord-otherNode.yCoord);
+    return Math.sqrt((xDelta*xDelta) + (yDelta*yDelta));
   }
   
-  if(depth >= config.treeDepth) {
-    return node;
-  } else {
-    node.children = [];
-    if(depth !== config.treeDepth) {
-      location.edges.forEach(function(edge) {
-        if(edge !== parentId) {
-          node.children.push(buildTree(edge, node.id, depth + 1));
-        }
-      });
-    }  
-    return node;
+  /*
+    A Heuristic to measure the distance between 2
+    nodes in different zones.
+  */
+  var distanceToOtherZoneNode = function(node, goal) {
+    var zoneBorder = zones[node.zone][goal.zone].borderCoordinates;
+    var goalBorder = zones[goal.zone][node.zone].borderCoordinates;
+    var zoneToZoneDistance = zones[goal.zone][node.zone].travelTime;
+    var distanceToBorder = (node, zoneBorder);
+    var distanceToGoal = (node, goalBorder);
+    return zoneToZoneDistance + distanceToBorder + distanceToGoal;
   }
+  
+  var edgeHeuristic = function(edgeId, goal){
+    var node = locationsObj[edgeId];
+    if(node.zone === goal.zone) {
+      return distanceToNode(node, goal);
+    } else {
+      return distanceToOtherZoneNode(node, goal);
+    }
+  }
+  
+  var search = function(node, goal) {
+    var lowestScore;
+    var bestNode;
+    node.edges.forEach(function(edgeId) {
+      var heuristicTravelTime = edgeHeuristic(edgeId, goal);
+      var actualTravelTime = node.paths[edgeId].travelTime;
+      var edgeScore = heuristicTravelTime + actualTravelTime;
+      if(!lowestScore || edgeScore < lowestScore) {
+        lowestScore = edgeScore;
+        bestNode = edgeId;
+      }
+    });
+    if (bestNode) {
+      directions.push(node.paths[bestNode])
+      if(bestNode === goal) {
+        return;
+      } else {
+        return search(locationsObj(bestNode), goal);
+      }
+    }
+  }
+  
+  search(startNode, destinationNode);
+  return directions;
 }
+
 
 mapper.init = function(callback) {
   locations.forEach(function(location) {
@@ -107,8 +143,10 @@ mapper.getRoute = function(req, res, next) {
     return res.send(400, "Invalid End Node ID");
   };
   
-  var tree = buildTree(startNodeId, endNodeId, 0);
-  return res.send(200, tree);
+  var startNode = locationsObj[startNodeId];
+  var endNode = locationsObj[endNodeId];
+  var directions = navigate(startNode, endNode);
+  return res.send(200, directions);
 };
 
 module.exports = mapper;
