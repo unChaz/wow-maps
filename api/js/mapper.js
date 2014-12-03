@@ -9,7 +9,7 @@ var mapper = {
 
 };
 
-mapper.navigate = function(startNode, destinationNode) {
+var navigate = function(startNode, destinationNode) {
   var directions = [];
   
   /*
@@ -30,9 +30,8 @@ mapper.navigate = function(startNode, destinationNode) {
     var zoneBorder = zones[node.zone][goal.zone].borderCoordinates;
     var goalBorder = zones[goal.zone][node.zone].borderCoordinates;
     var zoneToZoneDistance = zones[goal.zone][node.zone].travelTime;
-    var distanceToBorder = (node, zoneBorder);
     var distanceToGoal = (node, goalBorder);
-    return zoneToZoneDistance + distanceToBorder + distanceToGoal;
+    return distanceToBorder + distanceToGoal;
   }
   
   var edgeHeuristic = function(edgeId, goal){
@@ -44,12 +43,18 @@ mapper.navigate = function(startNode, destinationNode) {
     }
   }
   
-  var search = function(node, goal) {
+  function search(node, goal, i) {
+    console.log("Searching " + i);
+    if(i>100) {
+      return;
+    }
     var lowestScore;
     var bestNode;
     node.edges.forEach(function(edgeId) {
+      console.log("Checking node " + edgeId);
       var heuristicTravelTime = edgeHeuristic(edgeId, goal);
-      var actualTravelTime = node.paths[edgeId].travelTime;
+      var actualTravelTime = node.paths[edgeId].travelTime 
+        || distanceToNode(node, locationsObj[edgeId]);
       var edgeScore = heuristicTravelTime + actualTravelTime;
       if(!lowestScore || edgeScore < lowestScore) {
         lowestScore = edgeScore;
@@ -58,15 +63,18 @@ mapper.navigate = function(startNode, destinationNode) {
     });
     if (bestNode) {
       directions.push(node.paths[bestNode])
-      if(bestNode === goal) {
+      if(bestNode == goal.id) {
+        console.log("FOUND GOAL")
         return;
       } else {
-        return search(locationsObj(bestNode), goal);
+        console.log(bestNode + " != " + goal.id)
+        i++;
+        return search(locationsObj[bestNode], goal, i);
       }
     }
   }
   
-  search(startNode, destinationNode);
+  search(startNode, destinationNode, 0);
   return directions;
 }
 
