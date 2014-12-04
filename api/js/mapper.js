@@ -10,7 +10,17 @@ var mapper = {
 };
 
 var navigate = function(startNode, destinationNode) {
-  var directions = [];
+  var directions = [
+    {
+      start:     true,
+      location:  startNode.properName,
+      id:        startNode.id,
+      zone:      startNode.zone,
+      continent: startNode.continent,
+      xCoord:    startNode.xCoord,
+      yCoord:    startNode.yCoord,
+    }
+  ];
   
   /*
     A Heuristic to measure the distance from one 
@@ -31,7 +41,8 @@ var navigate = function(startNode, destinationNode) {
     var goalBorder = zones[goal.zone][node.zone].borderCoordinates;
     var zoneToZoneDistance = zones[goal.zone][node.zone].travelTime;
     var distanceToGoal = (node, goalBorder);
-    return distanceToBorder + distanceToGoal;
+    var distanceToNode = (zoneBorder, node);
+    return distanceToNode + zoneToZoneDistance + distanceToGoal;
   }
   
   var edgeHeuristic = function(edgeId, goal){
@@ -43,7 +54,7 @@ var navigate = function(startNode, destinationNode) {
     }
   }
   
-  function search(node, goal, i) {
+  function search(node, goal, i, last) {
     console.log("Searching " + i);
     if(i>100) {
       return;
@@ -51,25 +62,36 @@ var navigate = function(startNode, destinationNode) {
     var lowestScore;
     var bestNode;
     node.edges.forEach(function(edgeId) {
-      console.log("Checking node " + edgeId);
       var heuristicTravelTime = edgeHeuristic(edgeId, goal);
       var actualTravelTime = node.paths[edgeId].travelTime 
-        || distanceToNode(node, locationsObj[edgeId]);
+      || distanceToNode(node, locationsObj[edgeId]);
       var edgeScore = heuristicTravelTime + actualTravelTime;
       if(!lowestScore || edgeScore < lowestScore) {
         lowestScore = edgeScore;
         bestNode = edgeId;
       }
+      
     });
     if (bestNode) {
-      directions.push(node.paths[bestNode])
+      var distance = node.paths[bestNode].travelTime 
+        || distanceToNode(node, locationsObj[bestNode]);
+      var location = locationsObj[bestNode];
+      var direction = {
+        location:   location.properName,
+        id:         location.id,
+        zone:       location.zone,
+        continent:  location.continent,
+        xCoord:     location.xCoord,
+        yCoord:     location.yCoord,
+        distance:   distance
+      }
+      directions.push(direction);
       if(bestNode == goal.id) {
-        console.log("FOUND GOAL")
+        directions[directions.length - 1].goal = true;
         return;
       } else {
-        console.log(bestNode + " != " + goal.id)
         i++;
-        return search(locationsObj[bestNode], goal, i);
+        return search(locationsObj[bestNode], goal, i, node);
       }
     }
   }
@@ -92,23 +114,19 @@ mapper.init = function(callback) {
   
   paths.forEach(function(path) {
     if(!locationsObj[path.lambdaNode] || !locationsObj[path.sigmaNode]) {
-      return callback("Invalid Path location ID: " + path);
+      return callback("Invalid Path location ID: " + JSON.stringify(path));
     }
     
     if(path.lambdaNode === path.sigmaNode) {
-      return callback("Path cannot lead to itself: " + path);
-    }
-    
-    if (!path.travelTime || !(typeof path.travelTime === 'number')) {
-      return callback("Invalid or missing travel time: " + path);
+      return callback("Path cannot lead to itself: " + JSON.stringify(path));
     }
     
     if(locationsObj[path.lambdaNode].edges[path.sigmaNode]) {
-      return callback("Duplicate Path: " + path);
+      return callback("Duplicate Path: " + JSON.stringify(path));
     }
     
     if(locationsObj[path.sigmaNode].edges[path.lambdaNode]) {
-      return callback("Duplicate Path: " + path);
+      return callback("Duplicate Path: " + JSON.stringify(path));
     }
     
     locationsObj[path.lambdaNode].edges.push([path.sigmaNode]);

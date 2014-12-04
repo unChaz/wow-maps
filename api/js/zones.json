@@ -1,16 +1,224 @@
 {
   "Shadowmoon Valley": {
-    "Gorgrond": {
+    "Talador": {
       "borderCoordinates": {
-        "x": 35,
-        "y": 64
-      }
+        "x": 22,
+        "y": 13
+      },
+      "travelTime": 0
     },
     "Nagrand": {
       "borderCoordinates": {
-        "x": 35,
-        "y": 64
-      }
+        "x": 22,
+        "y": 13
+      },
+      "travelTime": 54
+    },
+    "Frostfire Ridge": {
+      "borderCoordinates": {
+        "x": 22,
+        "y": 13
+      },
+      "travelTime": 64
+    },
+    "Gorgrond": {
+      "borderCoordinates": {
+        "x": 22,
+        "y": 13
+      },
+      "travelTime": 60
+    },
+    "Spires of Arak": {
+      "borderCoordinates": {
+        "x": 22,
+        "y": 13
+      },
+      "travelTime": 3
+    }
+  },
+  "Nagrand": {
+    "Talador": {
+      "borderCoordinates": {
+        "x": 94,
+        "y": 75
+      },
+      "travelTime": 0
+    },
+    "Shadowmoon Valley": {
+      "borderCoordinates": {
+        "x": 94,
+        "y": 75
+      },
+      "travelTime": 54
+    },
+    "Frostfire Ridge": {
+      "borderCoordinates": {
+        "x": 94,
+        "y": 75
+      },
+      "travelTime": 69
+    },
+    "Gorgrond": {
+      "borderCoordinates": {
+        "x": 94,
+        "y": 75
+      },
+      "travelTime": 65
+    },
+    "Spires of Arak": {
+      "borderCoordinates": {
+        "x": 94,
+        "y": 75
+      },
+      "travelTime": 41
+    }
+  },
+  "Frostfire Ridge": {
+    "Gorgrond": {
+      "borderCoordinates": {
+        "x": 92,
+        "y": 69
+      },
+      "travelTime": 0
+    },
+    "Talador": {
+      "borderCoordinates": {
+        "x": 92,
+        "y": 69
+      },
+      "travelTime": 0
+    },
+    "Shadowmoon Valley": {
+      "borderCoordinates": {
+        "x": 92,
+        "y": 69
+      },
+      "travelTime": 4
+    },
+    "Nagrand": {
+      "borderCoordinates": {
+        "x": 92,
+        "y": 69
+      },
+      "travelTime": 69
+    },
+    "Spires of Arak": {
+      "borderCoordinates": {
+        "x": 92,
+        "y": 69
+      },
+      "travelTime": 61
+    }
+  },
+  "Gorgrond": {
+    "Frostfire Ridge": {
+      "borderCoordinates": {
+        "x": 39,
+        "y": 72
+      },
+      "travelTime": 0
+    },
+    "Talador": {
+      "borderCoordinates": {
+        "x": 41,
+        "y": 95
+      },
+      "travelTime": 0
+    },
+    "Shadowmoon Valley": {
+      "borderCoordinates": {
+        "x": 41,
+        "y": 95
+      },
+      "travelTime": 60
+    },
+    "Nagrand": {
+      "borderCoordinates": {
+        "x": 41,
+        "y": 95
+      },
+      "travelTime": 65
+    },
+    "Spires of Arak": {
+      "borderCoordinates": {
+        "x": 41,
+        "y": 95
+      },
+      "travelTime": 57
+    }
+  },
+  "Spires of Arak": {
+    "Talador": {
+      "borderCoordinates": {
+        "x": 21,
+        "y": 20
+      },
+      "travelTime": 0
+    },
+    "Frostfire Ridge": {
+      "borderCoordinates": {
+        "x": 21,
+        "y": 20
+      },
+      "travelTime": 61
+    },
+    "Gorgrond": {
+      "borderCoordinates": {
+        "x": 21,
+        "y": 20
+      },
+      "travelTime": 57
+    },
+    "Shadowmoon Valley": {
+      "borderCoordinates": {
+        "x": 21,
+        "y": 20
+      },
+      "travelTime": 0
+    },
+    "Nagrand": {
+      "borderCoordinates": {
+        "x": 21,
+        "y": 20
+      },
+      "travelTime": 41
+    }
+  },
+  "Talador": {
+    "Gorgrond": {
+      "borderCoordinates": {
+        "x": 67,
+        "y": 3
+      },
+      "travelTime": 0
+    },
+    "Nagrand": {
+      "borderCoordinates": {
+        "x": 30,
+        "y": 57
+      },
+      "travelTime": 0
+    },
+    "Shadowmoon Valley": {
+      "borderCoordinates": {
+        "x": 84,
+        "y": 60
+      },
+      "travelTime": 0
+    },
+    "Spires of Arak": {
+      "borderCoordinates": {
+        "x": 41,
+        "y": 97
+      },
+      "travelTime": 0
+    },
+    "Frostfire Ridge": {
+      "borderCoordinates": {
+        "x": 67,
+        "y": 3
+      },
+      "travelTime": 4
     }
   }
 }

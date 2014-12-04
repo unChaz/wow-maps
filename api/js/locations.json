@@ -1,32 +1,1452 @@
 [
   {
     "id":         "1",
-    "properName": "",
+    "properName": "Highmaul",
     "image":      "",
     "type":       "",
-    "zone":       "",
-    "continent":  "",
-    "xCoord":     0,
-    "yCoord":     0
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     26,
+    "yCoord":     34
   },
   {
     "id":         "2",
-    "properName": "",
+    "properName": "Broken Precipice",
     "image":      "",
     "type":       "",
-    "zone":       "",
-    "continent":  "",
-    "xCoord":     0,
-    "yCoord":     0
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     41,
+    "yCoord":     20
   },
   {
     "id":         "3",
-    "properName": "",
+    "properName": "Elemental Plateau",
     "image":      "",
     "type":       "",
-    "zone":       "",
-    "continent":  "",
-    "xCoord":     0,
-    "yCoord":     0
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     74,
+    "yCoord":     10
+  },
+  {
+    "id":         "4",
+    "properName": "Throne of the Elements",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     72,
+    "yCoord":     20
+  },
+  {
+    "id":         "5",
+    "properName": "The Ring of Blood",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     56,
+    "yCoord":     14
+  },
+  {
+    "id":         "6",
+    "properName": "Oshu'gun",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     48,
+    "yCoord":     65
+  },
+  {
+    "id":         "7",
+    "properName": "Telaar",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     66,
+    "yCoord":     63
+  },
+  {
+    "id":         "8",
+    "properName": "Lok Rath",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     55,
+    "yCoord":     43
+  },
+  {
+    "id":         "9",
+    "properName": "Stonecrag Gorge",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     65,
+    "yCoord":     49
+  },
+  {
+    "id":         "10",
+    "properName": "Ancestral Grounds",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     38,
+    "yCoord":     55
+  },
+  {
+    "id":         "11",
+    "properName": "Ironfist Harbor",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     39,
+    "yCoord":     72
+  },
+  {
+    "id":         "12",
+    "properName": "Grommashar",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     72,
+    "yCoord":     78
+  },
+  {
+    "id":         "13",
+    "properName": "Ring of Trials",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     78,
+    "yCoord":     51
+  },
+  {
+    "id":         "14",
+    "properName": "Hallvalor",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     87,
+    "yCoord":     55
+  },
+  {
+    "id":         "15",
+    "properName": "Mar'gok's Overwatch",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     82,
+    "yCoord":     75
+  },
+  {
+    "id":         "16",
+    "properName": "Shattrath City",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     37,
+    "yCoord":     27
+  },
+  {
+    "id":         "17",
+    "properName": "Orunai Coast",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     56,
+    "yCoord":     15
+  },
+  {
+    "id":         "18",
+    "properName": "Fort Wrynn",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     69,
+    "yCoord":     22
+  },
+  {
+    "id":         "19",
+    "properName": "Vol'jin's Pride",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     72,
+    "yCoord":     30
+  },
+  {
+    "id":         "20",
+    "properName": "Zangarra",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     85,
+    "yCoord":     30
+  },
+  {
+    "id":         "21",
+    "properName": "Aruuna",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     78,
+    "yCoord":     45
+  },
+  {
+    "id":         "22",
+    "properName": "Tomb of Lights",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     58,
+    "yCoord":     64
+  },
+  {
+    "id":         "23",
+    "properName": "Gordal Fortress",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     67,
+    "yCoord":     79
+  },
+  {
+    "id":         "24",
+    "properName": "Telmor",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     45,
+    "yCoord":     91
+  },
+  {
+    "id":         "25",
+    "properName": "Gul'rok",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     35,
+    "yCoord":     75
+  },
+  {
+    "id":         "26",
+    "properName": "Court of Souls",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     43,
+    "yCoord":     61
+  },
+  {
+    "id":         "27",
+    "properName": "Tuurem",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     61,
+    "yCoord":     37
+  },
+  {
+    "id":         "28",
+    "properName": "Auchindoun",
+    "image":      "",
+    "type":       "",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     50,
+    "yCoord":     72
+  },
+  {
+    "id":         "29",
+    "properName": "Skettis",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     44,
+    "yCoord":     15
+  },
+  {
+    "id":         "30",
+    "properName": "The Howling Crag",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     59,
+    "yCoord":     23
+  },
+  {
+    "id":         "31",
+    "properName": "Sethekk Hollow",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     66,
+    "yCoord":     43
+  },
+  {
+    "id":         "32",
+    "properName": "Veil Zekk",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     60,
+    "yCoord":     54
+  },
+  {
+    "id":         "33",
+    "properName": "Bloodmane Valley",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     52,
+    "yCoord":     59
+  },
+  {
+    "id":         "34",
+    "properName": "Pinchwhistle Gearworks",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     61,
+    "yCoord":     73
+  },
+  {
+    "id":         "35",
+    "properName": "Pinchwhistle Point",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     57,
+    "yCoord":     90
+  },
+  {
+    "id":         "36",
+    "properName": "Southport",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     40,
+    "yCoord":     61
+  },
+  {
+    "id":         "37",
+    "properName": "Axefall",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     40,
+    "yCoord":     43
+  },
+  {
+    "id":         "38",
+    "properName": "The Writhing Mire",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     32,
+    "yCoord":     43
+  },
+  {
+    "id":         "39",
+    "properName": "Bladefist Hold",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     28,
+    "yCoord":     26
+  },
+  {
+    "id":         "40",
+    "properName": "Veil Akraz",
+    "image":      "",
+    "type":       "",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     43,
+    "yCoord":     24
+  },
+  {
+    "id":         "41",
+    "properName": "Gul'var",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     18,
+    "yCoord":     29
+  },
+  {
+    "id":         "42",
+    "properName": "Gloomshade Grove",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     39,
+    "yCoord":     26
+  },
+  {
+    "id":         "43",
+    "properName": "Elodor",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     60,
+    "yCoord":     25
+  },
+  {
+    "id":         "44",
+    "properName": "Embaari Village",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     45,
+    "yCoord":     39
+  },
+  {
+    "id":         "45",
+    "properName": "Anguish Fortress",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     33,
+    "yCoord":     41
+  },
+  {
+    "id":         "46",
+    "properName": "Shaz'ghul",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     37,
+    "yCoord":     61
+  },
+  {
+    "id":         "47",
+    "properName": "The Burial Fields",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     44,
+    "yCoord":     60
+  },
+  {
+    "id":         "48",
+    "properName": "Socrethar's Rise",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     45,
+    "yCoord":     71
+  },
+  {
+    "id":         "49",
+    "properName": "Darktide Roost",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     61,
+    "yCoord":     87
+  },
+  {
+    "id":         "50",
+    "properName": "The Shimmer Moor",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     63,
+    "yCoord":     63
+  },
+  {
+    "id":         "51",
+    "properName": "Temple of Karabor",
+    "image":      "",
+    "type":       "",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     70,
+    "yCoord":     47
+  },
+  {
+    "id":         "52",
+    "properName": "Iron Docks",
+    "image":      "",
+    "type":       "",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     53,
+    "yCoord":     14
+  },
+  {
+    "id":         "53",
+    "properName": "Blackrock Foundry",
+    "image":      "",
+    "type":       "",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     55,
+    "yCoord":     27
+  },
+  {
+    "id":         "54",
+    "properName": "Everbloom Wilds",
+    "image":      "",
+    "type":       "",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     66,
+    "yCoord":     34
+  },
+  {
+    "id":         "55",
+    "properName": "Gronn Canyon",
+    "image":      "",
+    "type":       "",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     45,
+    "yCoord":     51
+  },
+  {
+    "id":         "56",
+    "properName": "Highpass",
+    "image":      "",
+    "type":       "",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     53,
+    "yCoord":     59
+  },
+  {
+    "id":         "57",
+    "properName": "Tangleheart",
+    "image":      "",
+    "type":       "",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     59,
+    "yCoord":     68
+  },
+  {
+    "id":         "58",
+    "properName": "Bastion Rise",
+    "image":      "",
+    "type":       "",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     47,
+    "yCoord":     92
+  },
+  {
+    "id":         "59",
+    "properName": "Evermorn Springs",
+    "image":      "",
+    "type":       "",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     41,
+    "yCoord":     79
+  },
+  {
+    "id":         "60",
+    "properName": "Stonemaul Arena",
+    "image":      "",
+    "type":       "",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     40,
+    "yCoord":     66
+  },
+  {
+    "id":         "61",
+    "properName": "Beastwatch",
+    "image":      "",
+    "type":       "",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     46,
+    "yCoord":     69
+  },
+  {
+    "id":         "62",
+    "properName": "Bladespire Fortress",
+    "image":      "",
+    "type":       "",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     26,
+    "yCoord":     38
+  },
+  {
+    "id":         "63",
+    "properName": "Wor'gol",
+    "image":      "",
+    "type":       "",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     21,
+    "yCoord":     58
+  },
+  {
+    "id":         "64",
+    "properName": "Stonefang Outpost",
+    "image":      "",
+    "type":       "",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     41,
+    "yCoord":     52
+  },
+  {
+    "id":         "65",
+    "properName": "Daggermaw Ravine",
+    "image":      "",
+    "type":       "",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     40,
+    "yCoord":     29
+  },
+  {
+    "id":         "66",
+    "properName": "Crackling Plains",
+    "image":      "",
+    "type":       "",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     58,
+    "yCoord":     38
+  },
+  {
+    "id":         "67",
+    "properName": "Colossal's Fall",
+    "image":      "",
+    "type":       "",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     61,
+    "yCoord":     26
+  },
+  {
+    "id":         "68",
+    "properName": "Magnarok",
+    "image":      "",
+    "type":       "",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     71,
+    "yCoord":     27
+  },
+  {
+    "id":         "69",
+    "properName": "Grom'gar",
+    "image":      "",
+    "type":       "",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     64,
+    "yCoord":     64
+  },
+  {
+    "id":         "70",
+    "properName": "Horde Garrison",
+    "image":      "",
+    "type":       "",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     48,
+    "yCoord":     67
+  },
+  {
+    "id":         "71",
+    "properName": "Iron Siegeworks",
+    "image":      "",
+    "type":       "",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     86,
+    "yCoord":     47
+  },
+  {
+    "id":         "72",
+    "properName": "Warspear",
+    "image":      "",
+    "type":       "",
+    "zone":       "Ashran",
+    "continent":  "Draenor",
+    "xCoord":     46,
+    "yCoord":     22
+  },
+  {
+    "id":         "73",
+    "properName": "Amphitheater of Annihilation",
+    "image":      "",
+    "type":       "",
+    "zone":       "Ashran",
+    "continent":  "Draenor",
+    "xCoord":     35,
+    "yCoord":     33
+  },
+  {
+    "id":         "74",
+    "properName": "Ring of Conquest",
+    "image":      "",
+    "type":       "",
+    "zone":       "Ashran",
+    "continent":  "Draenor",
+    "xCoord":     35,
+    "yCoord":     50
+  },
+  {
+    "id":         "75",
+    "properName": "Ashmaul Burial Grounds",
+    "image":      "",
+    "type":       "",
+    "zone":       "Ashran",
+    "continent":  "Draenor",
+    "xCoord":     37,
+    "yCoord":     63
+  },
+  {
+    "id":         "76",
+    "properName": "Stormshield",
+    "image":      "",
+    "type":       "",
+    "zone":       "Ashran",
+    "continent":  "Draenor",
+    "xCoord":     45,
+    "yCoord":     79
+  },
+  {
+    "id":         "77",
+    "properName": "Molten Quarry",
+    "image":      "",
+    "type":       "",
+    "zone":       "Ashran",
+    "continent":  "Draenor",
+    "xCoord":     56,
+    "yCoord":     70
+  },
+  {
+    "id":         "78",
+    "properName": "Seat of Kor'lok",
+    "image":      "",
+    "type":       "",
+    "zone":       "Ashran",
+    "continent":  "Draenor",
+    "xCoord":     55,
+    "yCoord":     50
+  },
+  {
+    "id":         "79",
+    "properName": "The Dark Woods",
+    "image":      "",
+    "type":       "",
+    "zone":       "Ashran",
+    "continent":  "Draenor",
+    "xCoord":     58,
+    "yCoord":     41
+  },
+  {
+    "id":         "80",
+    "properName": "Brute's Rise",
+    "image":      "",
+    "type":       "",
+    "zone":       "Ashran",
+    "continent":  "Draenor",
+    "xCoord":     61,
+    "yCoord":     30
+  },
+  {
+    "id":         "81",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     67,
+    "yCoord":     38
+  },
+  {
+    "id":         "82",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     78,
+    "yCoord":     54
+  },
+  {
+    "id":         "83",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     85,
+    "yCoord":     60
+  },
+  {
+    "id":         "84",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     88,
+    "yCoord":     72
+  },
+  {
+    "id":         "85",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     42,
+    "yCoord":     74
+  },
+  {
+    "id":         "86",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     43,
+    "yCoord":     69
+  },
+  {
+    "id":         "87",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     49,
+    "yCoord":     58
+  },
+  {
+    "id":         "88",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     44,
+    "yCoord":     13
+  },
+  {
+    "id":         "89",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     59,
+    "yCoord":     40
+  },
+  {
+    "id":         "90",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     59,
+    "yCoord":     54
+  },
+  {
+    "id":         "91",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     57,
+    "yCoord":     71
+  },
+  {
+    "id":         "92",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     52,
+    "yCoord":     71
+  },
+  {
+    "id":         "93",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     46,
+    "yCoord":     79
+  },
+  {
+    "id":         "94",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     25,
+    "yCoord":     22
+  },
+  {
+    "id":         "95",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     38,
+    "yCoord":     34
+  },
+  {
+    "id":         "96",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     55,
+    "yCoord":     39
+  },
+  {
+    "id":         "97",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     60,
+    "yCoord":     46
+  },
+  {
+    "id":         "98",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     59,
+    "yCoord":     67
+  },
+  {
+    "id":         "99",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     39,
+    "yCoord":     68
+  },
+  {
+    "id":         "100",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     39,
+    "yCoord":     57
+  },
+  {
+    "id":         "101",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     61,
+    "yCoord":     23
+  },
+  {
+    "id":         "102",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     78,
+    "yCoord":     29
+  },
+  {
+    "id":         "103",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     67,
+    "yCoord":     42
+  },
+  {
+    "id":         "104",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     35,
+    "yCoord":     63
+  },
+  {
+    "id":         "105",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     69,
+    "yCoord":     71
+  },
+  {
+    "id":         "106",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     38,
+    "yCoord":     20
+  },
+  {
+    "id":         "107",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     51,
+    "yCoord":     29
+  },
+  {
+    "id":         "108",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     66,
+    "yCoord":     25
+  },
+  {
+    "id":         "109",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     38,
+    "yCoord":     25
+  },
+  {
+    "id":         "110",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     33,
+    "yCoord":     35
+  },
+  {
+    "id":         "111",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     46,
+    "yCoord":     37
+  },
+  {
+    "id":         "112",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     59,
+    "yCoord":     48
+  },
+  {
+    "id":         "113",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     47,
+    "yCoord":     45
+  },
+  {
+    "id":         "114",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     42,
+    "yCoord":     50
+  },
+  {
+    "id":         "115",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     42,
+    "yCoord":     58
+  },
+  {
+    "id":         "116",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     63,
+    "yCoord":     60
+  },
+  {
+    "id":         "117",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     47,
+    "yCoord":     62
+  },
+  {
+    "id":         "118",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     56,
+    "yCoord":     78
+  },
+  {
+    "id":         "119",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     37,
+    "yCoord":     34
+  },
+  {
+    "id":         "120",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     41,
+    "yCoord":     28
+  },
+  {
+    "id":         "121",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     53,
+    "yCoord":     33
+  },
+  {
+    "id":         "122",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     49,
+    "yCoord":     42
+  },
+  {
+    "id":         "123",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     52,
+    "yCoord":     48
+  },
+  {
+    "id":         "124",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     59,
+    "yCoord":     54
+  },
+  {
+    "id":         "125",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     53,
+    "yCoord":     80
+  },
+  {
+    "id":         "126",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     63,
+    "yCoord":     43
+  },
+  {
+    "id":         "127",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     68,
+    "yCoord":     40
+  },
+  {
+    "id":         "128",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     69,
+    "yCoord":     45
+  },
+  {
+    "id":         "129",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     73,
+    "yCoord":     31
+  },
+  {
+    "id":         "130",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     69,
+    "yCoord":     57
+  },
+  {
+    "id":         "131",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     82,
+    "yCoord":     48
+  },
+  {
+    "id":         "132",
+    "properName": "Connector",
+    "image":      "",
+    "type":       "Connector",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     83,
+    "yCoord":     62
+  },
+  {
+    "id":         "133",
+    "properName": "Talador-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     94,
+    "yCoord":     75
+  },
+  {
+    "id":         "134",
+    "properName": "Nagrand-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     30,
+    "yCoord":     57
+  },
+  {
+    "id":         "135",
+    "properName": "Gorgrond-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     67,
+    "yCoord":     3
+  },
+  {
+    "id":         "136",
+    "properName": "Shadowmoon Valley-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     84,
+    "yCoord":     60
+  },
+  {
+    "id":         "137",
+    "properName": "Spires of Arak-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     41,
+    "yCoord":     97
+  },
+  {
+    "id":         "138",
+    "properName": "Spires of Arak-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Talador",
+    "continent":  "Draenor",
+    "xCoord":     57,
+    "yCoord":     95
+  },
+  {
+    "id":         "139",
+    "properName": "Talador-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Shadowmoon Valley",
+    "continent":  "Draenor",
+    "xCoord":     22,
+    "yCoord":     13
+  },
+  {
+    "id":         "140",
+    "properName": "Gogrond-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Frostfire Ridge",
+    "continent":  "Draenor",
+    "xCoord":     92,
+    "yCoord":     69
+  },
+  {
+    "id":         "141",
+    "properName": "Talador-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     21,
+    "yCoord":     20
+  },
+  {
+    "id":         "142",
+    "properName": "Talador-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Spires of Arak",
+    "continent":  "Draenor",
+    "xCoord":     37,
+    "yCoord":     18
+  },
+  {
+    "id":         "143",
+    "properName": "Frostfire Ridge-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     39,
+    "yCoord":     72
+  },
+  {
+    "id":         "144",
+    "properName": "Talador-Border",
+    "image":      "",
+    "type":       "Border",
+    "zone":       "Gorgrond",
+    "continent":  "Draenor",
+    "xCoord":     41,
+    "yCoord":     95
+  },
+  {
+    "id":         "145",
+    "properName": "Mok'gol Outpost",
+    "image":      "",
+    "type":       "",
+    "zone":       "Nagrand",
+    "continent":  "Draenor",
+    "xCoord":     45,
+    "yCoord":     33
   }
 ]

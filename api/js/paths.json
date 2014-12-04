@@ -1,8 +1,800 @@
 [
   {
-    "lambdaNode"  : "1",
+    "lambdaNode"  : "62",
+    "sigmaNode"   : "63",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "63",
+    "sigmaNode"   : "64",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "62",
+    "sigmaNode"   : "64",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "64",
+    "sigmaNode"   : "66",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "66",
+    "sigmaNode"   : "65",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "66",
+    "sigmaNode"   : "67",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "66",
+    "sigmaNode"   : "70",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "66",
+    "sigmaNode"   : "69",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "67",
+    "sigmaNode"   : "81",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "81",
+    "sigmaNode"   : "68",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "69",
+    "sigmaNode"   : "82",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "82",
+    "sigmaNode"   : "83",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "83",
+    "sigmaNode"   : "71",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "83",
+    "sigmaNode"   : "84",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "84",
+    "sigmaNode"   : "140",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "140",
+    "sigmaNode"   : "143",
+    "travelTime"  : 0,
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "143",
+    "sigmaNode"   : "85",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "85",
+    "sigmaNode"   : "61",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "61",
+    "sigmaNode"   : "86",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "86",
+    "sigmaNode"   : "60",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "60",
+    "sigmaNode"   : "55",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "55",
+    "sigmaNode"   : "53",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "53",
+    "sigmaNode"   : "88",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "88",
+    "sigmaNode"   : "52",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "53",
+    "sigmaNode"   : "89",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "89",
+    "sigmaNode"   : "54",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "55",
+    "sigmaNode"   : "87",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "87",
+    "sigmaNode"   : "56",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "56",
+    "sigmaNode"   : "90",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "90",
+    "sigmaNode"   : "57",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "57",
+    "sigmaNode"   : "91",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "91",
+    "sigmaNode"   : "92",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "92",
+    "sigmaNode"   : "93",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "93",
+    "sigmaNode"   : "59",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "93",
+    "sigmaNode"   : "61",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "93",
+    "sigmaNode"   : "58",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "58",
+    "sigmaNode"   : "144",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "144",
+    "sigmaNode"   : "135",
+    "travelTime"  :  0,
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "136",
+    "sigmaNode"   : "139",
+    "travelTime"  :  0,
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "139",
+    "sigmaNode"   : "94",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "94",
+    "sigmaNode"   : "41",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "94",
+    "sigmaNode"   : "95",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "95",
+    "sigmaNode"   : "42",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "95",
+    "sigmaNode"   : "45",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "95",
+    "sigmaNode"   : "44",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "44",
+    "sigmaNode"   : "47",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "47",
+    "sigmaNode"   : "100",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "100",
+    "sigmaNode"   : "46",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "46",
+    "sigmaNode"   : "99",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "99",
+    "sigmaNode"   : "48",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "48",
+    "sigmaNode"   : "47",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "44",
+    "sigmaNode"   : "96",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "96",
+    "sigmaNode"   : "43",
+    "type"        : "Epic Mount"
+  },
+  
+  {
+    "lambdaNode"  : "96",
+    "sigmaNode"   : "97",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "97",
+    "sigmaNode"   : "51",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "98",
+    "sigmaNode"   : "50",
+    "type"        : "Epic Mount"
+  },
+  
+  {
+    "lambdaNode"  : "98",
+    "sigmaNode"   : "49",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "97",
+    "sigmaNode"   : "98",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "134",
+    "sigmaNode"   : "133",
+    "travelTime"  :  0,
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "133",
+    "sigmaNode"   : "132",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "132",
+    "sigmaNode"   : "15",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "132",
+    "sigmaNode"   : "14",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "14",
+    "sigmaNode"   : "131",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "131",
+    "sigmaNode"   : "129",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "129",
+    "sigmaNode"   : "3",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "129",
+    "sigmaNode"   : "4",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "129",
+    "sigmaNode"   : "127",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "127",
+    "sigmaNode"   : "128",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "128",
+    "sigmaNode"   : "13",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "131",
+    "sigmaNode"   : "13",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "13",
+    "sigmaNode"   : "132",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "13",
+    "sigmaNode"   : "130",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "128",
+    "sigmaNode"   : "9",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "127",
+    "sigmaNode"   : "126",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "127",
+    "sigmaNode"   : "121",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "126",
+    "sigmaNode"   : "9",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "126",
+    "sigmaNode"   : "8",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "8",
+    "sigmaNode"   : "123",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "9",
+    "sigmaNode"   : "124",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "130",
+    "sigmaNode"   : "12",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "130",
+    "sigmaNode"   : "7",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "7",
+    "sigmaNode"   : "124",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "124",
+    "sigmaNode"   : "123",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "124",
+    "sigmaNode"   : "6",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "123",
+    "sigmaNode"   : "6",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "6",
+    "sigmaNode"   : "10",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "6",
+    "sigmaNode"   : "125",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "125",
+    "sigmaNode"   : "11",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "123",
+    "sigmaNode"   : "122",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "122",
+    "sigmaNode"   : "121",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "121",
+    "sigmaNode"   : "5",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "121",
+    "sigmaNode"   : "145",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "122",
+    "sigmaNode"   : "145",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "120",
+    "sigmaNode"   : "145",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "120",
+    "sigmaNode"   : "121",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "120",
     "sigmaNode"   : "2",
-    "travelTime"  : 231,
-    "type"        : "Flight Path"
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "120",
+    "sigmaNode"   : "119",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "119",
+    "sigmaNode"   : "1",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "134",
+    "sigmaNode"   : "104",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "104",
+    "sigmaNode"   : "25",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "104",
+    "sigmaNode"   : "26",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "25",
+    "sigmaNode"   : "26",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "25",
+    "sigmaNode"   : "28",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "26",
+    "sigmaNode"   : "28",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "28",
+    "sigmaNode"   : "137",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "137",
+    "sigmaNode"   : "141",
+    "travelTime"  :  0,
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "28",
+    "sigmaNode"   : "24",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "28",
+    "sigmaNode"   : "138",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "138",
+    "sigmaNode"   : "142",
+    "travelTime"  :  0,
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "28",
+    "sigmaNode"   : "22",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "22",
+    "sigmaNode"   : "105",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "105",
+    "sigmaNode"   : "23",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "28",
+    "sigmaNode"   : "27",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "26",
+    "sigmaNode"   : "16",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "16",
+    "sigmaNode"   : "27",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "27",
+    "sigmaNode"   : "103",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "103",
+    "sigmaNode"   : "136",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "103",
+    "sigmaNode"   : "20",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "20",
+    "sigmaNode"   : "21",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "20",
+    "sigmaNode"   : "101",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "101",
+    "sigmaNode"   : "17",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "101",
+    "sigmaNode"   : "18",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "18",
+    "sigmaNode"   : "20",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "18",
+    "sigmaNode"   : "102",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "18",
+    "sigmaNode"   : "135",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "102",
+    "sigmaNode"   : "20",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "102",
+    "sigmaNode"   : "19",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "141",
+    "sigmaNode"   : "39",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "142",
+    "sigmaNode"   : "106",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "106",
+    "sigmaNode"   : "29",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "29",
+    "sigmaNode"   : "107",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "107",
+    "sigmaNode"   : "30",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "30",
+    "sigmaNode"   : "108",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "108",
+    "sigmaNode"   : "31",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "31",
+    "sigmaNode"   : "112",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "112",
+    "sigmaNode"   : "107",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "112",
+    "sigmaNode"   : "32",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "32",
+    "sigmaNode"   : "116",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "116",
+    "sigmaNode"   : "34",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "34",
+    "sigmaNode"   : "118",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "118",
+    "sigmaNode"   : "35",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "118",
+    "sigmaNode"   : "117",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "117",
+    "sigmaNode"   : "115",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "117",
+    "sigmaNode"   : "33",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "33",
+    "sigmaNode"   : "113",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "113",
+    "sigmaNode"   : "32",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "115",
+    "sigmaNode"   : "36",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "115",
+    "sigmaNode"   : "114",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "114",
+    "sigmaNode"   : "37",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "37",
+    "sigmaNode"   : "38",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "38",
+    "sigmaNode"   : "110",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "37",
+    "sigmaNode"   : "110",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "37",
+    "sigmaNode"   : "111",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "111",
+    "sigmaNode"   : "113",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "40",
+    "sigmaNode"   : "111",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "109",
+    "sigmaNode"   : "40",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "109",
+    "sigmaNode"   : "110",
+    "type"        : "Epic Mount"
+  },
+  {
+    "lambdaNode"  : "110",
+    "sigmaNode"   : "39",
+    "type"        : "Epic Mount"
   }
 ]
