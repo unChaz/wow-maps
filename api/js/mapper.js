@@ -9,6 +9,40 @@ var mapper = {
 
 };
 
+/*
+A Heuristic to measure the distance from one 
+node to another that are in the same zone.
+*/
+mapper.distanceToNode = function(node, otherNode) {
+  var xDelta = (node.xCoord-otherNode.xCoord);
+  var yDelta = (node.yCoord-otherNode.yCoord);
+  var xSquared = Math.pow(xDelta, 2) || 1;
+  var ySquared = Math.pow(yDelta, 2) || 1;
+  return Math.sqrt(xSquared + ySquared);
+}
+
+/*
+A Heuristic to measure the distance between 2
+nodes in different zones.
+*/
+mapper.distanceToOtherZoneNode = function(node, goal) {
+  var zoneBorder = zones[node.zone][goal.zone].borderCoordinates;
+  var goalBorder = zones[goal.zone][node.zone].borderCoordinates;
+  var zoneToZoneDistance = zones[goal.zone][node.zone].travelTime;
+  var distanceToGoal = mapper.distanceToNode(node, goalBorder);
+  var distanceToNode = mapper.distanceToNode(zoneBorder, node);
+  return (distanceToNode + zoneToZoneDistance + distanceToGoal);
+}
+
+mapper.edgeHeuristic = function(edgeId, goal){
+  var node = locationsObj[edgeId];
+  if(node.zone === goal.zone) {
+    return mapper.distanceToNode(node, goal);
+  } else {
+    return mapper.distanceToOtherZoneNode(node, goal);
+  }
+}
+
 var navigate = function(startNode, destinationNode) {
   var directions = [
     {
@@ -22,38 +56,6 @@ var navigate = function(startNode, destinationNode) {
     }
   ];
   
-  /*
-    A Heuristic to measure the distance from one 
-    node to another that are in the same zone.
-  */
-  var distanceToNode = function(node, otherNode) {
-    var xDelta = (node.xCoord-otherNode.xCoord);
-    var yDelta = (node.yCoord-otherNode.yCoord);
-    return Math.sqrt((xDelta*xDelta) + (yDelta*yDelta));
-  }
-  
-  /*
-    A Heuristic to measure the distance between 2
-    nodes in different zones.
-  */
-  var distanceToOtherZoneNode = function(node, goal) {
-    var zoneBorder = zones[node.zone][goal.zone].borderCoordinates;
-    var goalBorder = zones[goal.zone][node.zone].borderCoordinates;
-    var zoneToZoneDistance = zones[goal.zone][node.zone].travelTime;
-    var distanceToGoal = (node, goalBorder);
-    var distanceToNode = (zoneBorder, node);
-    return distanceToNode + zoneToZoneDistance + distanceToGoal;
-  }
-  
-  var edgeHeuristic = function(edgeId, goal){
-    var node = locationsObj[edgeId];
-    if(node.zone === goal.zone) {
-      return distanceToNode(node, goal);
-    } else {
-      return distanceToOtherZoneNode(node, goal);
-    }
-  }
-  
   function search(node, goal, i, last) {
     console.log("Searching " + i);
     if(i>100) {
@@ -61,38 +63,52 @@ var navigate = function(startNode, destinationNode) {
     }
     var lowestScore;
     var bestNode;
+    var foundNode;
     node.edges.forEach(function(edgeId) {
-      var heuristicTravelTime = edgeHeuristic(edgeId, goal);
+      var edge = locationsObj[edgeId];
+      console.log(JSON.stringify(edge));
+      if(edge.type == "Border") {
+        console.log("FOUND BORDER")
+      }
+      if(edge.type === "Border" 
+        && edge.zone !== goal.zone 
+        && zones[edge.zone][goal.zone].borderCoordinates.x == edge.xCoord
+        && zones[edge.zone][goal.zone].borderCoordinates.y == edge.yCoord
+      ) {
+        foundNode = edge;
+      }
+      var heuristicTravelTime = mapper.edgeHeuristic(edgeId, goal);
+      console.log("Heuristic: " + heuristicTravelTime);
       var actualTravelTime = node.paths[edgeId].travelTime 
-      || distanceToNode(node, locationsObj[edgeId]);
+      || mapper.distanceToNode(node, locationsObj[edgeId]);
       var edgeScore = heuristicTravelTime + actualTravelTime;
       if(!lowestScore || edgeScore < lowestScore) {
         lowestScore = edgeScore;
         bestNode = edgeId;
       }
-      
     });
-    if (bestNode) {
-      var distance = node.paths[bestNode].travelTime 
-        || distanceToNode(node, locationsObj[bestNode]);
-      var location = locationsObj[bestNode];
-      var direction = {
-        location:   location.properName,
-        id:         location.id,
-        zone:       location.zone,
-        continent:  location.continent,
-        xCoord:     location.xCoord,
-        yCoord:     location.yCoord,
-        distance:   distance
-      }
-      directions.push(direction);
-      if(bestNode == goal.id) {
-        directions[directions.length - 1].goal = true;
-        return;
-      } else {
-        i++;
-        return search(locationsObj[bestNode], goal, i, node);
-      }
+    if (!foundNode && bestNode) {
+      foundNode = locationsObj[bestNode];
+    }
+    
+    var distance = node.paths[foundNode.id].travelTime 
+    || mapper.distanceToNode(node, foundNode);
+    var direction = {
+      location:   foundNode.properName,
+      id:         foundNode.id,
+      zone:       foundNode.zone,
+      continent:  foundNode.continent,
+      xCoord:     foundNode.xCoord,
+      yCoord:     foundNode.yCoord,
+      distance:   distance
+    }
+    directions.push(direction);
+    if(foundNode.id == goal.id) {
+      directions[directions.length - 1].goal = true;
+      return;
+    } else {
+      i++;
+      return search(foundNode, goal, i, node);
     }
   }
   

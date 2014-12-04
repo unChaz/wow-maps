@@ -317,11 +317,6 @@
   },
   {
     "lambdaNode"  : "14",
-    "sigmaNode"   : "131",
-    "type"        : "Epic Mount"
-  },
-  {
-    "lambdaNode"  : "131",
     "sigmaNode"   : "129",
     "type"        : "Epic Mount"
   },
@@ -347,11 +342,6 @@
   },
   {
     "lambdaNode"  : "128",
-    "sigmaNode"   : "13",
-    "type"        : "Epic Mount"
-  },
-  {
-    "lambdaNode"  : "131",
     "sigmaNode"   : "13",
     "type"        : "Epic Mount"
   },

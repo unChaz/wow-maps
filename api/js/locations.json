@@ -1300,16 +1300,6 @@
     "yCoord":     57
   },
   {
-    "id":         "131",
-    "properName": "Connector",
-    "image":      "",
-    "type":       "Connector",
-    "zone":       "Nagrand",
-    "continent":  "Draenor",
-    "xCoord":     82,
-    "yCoord":     48
-  },
-  {
     "id":         "132",
     "properName": "Connector",
     "image":      "",
