@@ -30,7 +30,7 @@ mapper.distanceToOtherZoneNode = function(node, goal) {
   var goalBorder = zones[goal.zone][node.zone].borderCoordinates;
   var zoneToZoneDistance = zones[goal.zone][node.zone].travelTime;
   var distanceToGoal = mapper.distanceToNode(node, goalBorder);
-  var distanceToNode = mapper.distanceToNode(zoneBorder, node);
+  var distanceToNode = mapper.distanceToNode(node, zoneBorder);
   return (distanceToNode + zoneToZoneDistance + distanceToGoal);
 }
 
@@ -41,6 +41,19 @@ mapper.edgeHeuristic = function(edgeId, goal){
   } else {
     return mapper.distanceToOtherZoneNode(node, goal);
   }
+}
+
+mapper.formDirection = function(node, distance) {
+  var direction = {
+    location: node.properName, 
+    id:       node.id,
+    zone:     node.zone,
+    continent:node.continent,
+    xCoord:   node.xCoord, 
+    yCoord:   node.yCoord,
+    distance: distance
+  }
+  return direction;
 }
 
 var navigate = function(startNode, destinationNode) {
@@ -56,63 +69,37 @@ var navigate = function(startNode, destinationNode) {
     }
   ];
   
-  function search(node, goal, i, last) {
-    console.log("Searching " + i);
-    if(i>100) {
-      return;
-    }
-    var lowestScore;
-    var bestNode;
-    var foundNode;
-    node.edges.forEach(function(edgeId) {
-      var edge = locationsObj[edgeId];
-      console.log(JSON.stringify(edge));
-      if(edge.type == "Border") {
-        console.log("FOUND BORDER")
-      }
-      if(edge.type === "Border" 
-        && edge.zone !== goal.zone 
-        && zones[edge.zone][goal.zone].borderCoordinates.x == edge.xCoord
-        && zones[edge.zone][goal.zone].borderCoordinates.y == edge.yCoord
-      ) {
-        foundNode = edge;
-      }
-      var heuristicTravelTime = mapper.edgeHeuristic(edgeId, goal);
-      console.log("Heuristic: " + heuristicTravelTime);
-      var actualTravelTime = node.paths[edgeId].travelTime 
-      || mapper.distanceToNode(node, locationsObj[edgeId]);
-      var edgeScore = heuristicTravelTime + actualTravelTime;
-      if(!lowestScore || edgeScore < lowestScore) {
-        lowestScore = edgeScore;
-        bestNode = edgeId;
-      }
-    });
-    if (!foundNode && bestNode) {
-      foundNode = locationsObj[bestNode];
-    }
-    
-    var distance = node.paths[foundNode.id].travelTime 
-    || mapper.distanceToNode(node, foundNode);
-    var direction = {
-      location:   foundNode.properName,
-      id:         foundNode.id,
-      zone:       foundNode.zone,
-      continent:  foundNode.continent,
-      xCoord:     foundNode.xCoord,
-      yCoord:     foundNode.yCoord,
-      distance:   distance
-    }
-    directions.push(direction);
-    if(foundNode.id == goal.id) {
-      directions[directions.length - 1].goal = true;
+  function search(node, goal, last) {
+    if(node.id === goal.id) {
       return;
     } else {
-      i++;
-      return search(foundNode, goal, i, node);
+      var lowestVal;
+      var winningNode;
+      node.edges.forEach(function(edgeId) {
+        if(last && last.id == edgeId){
+          //do nothing
+        } else {
+          var heuristic = mapper.edgeHeuristic(edgeId, goal);
+          var edge = locationsObj[edgeId];
+          var path = node.paths[edgeId];
+          if(!lowestVal || heuristic < lowestVal) {
+            lowestVal = heuristic;
+            winningNode = edge;
+          }
+        }
+      });
+      if(winningNode) {
+        var direction = mapper.formDirection(winningNode, lowestVal);
+        if(winningNode.id == goal.id) {
+          direction.goal = true;
+        }
+        directions.push(direction);
+        search(winningNode, goal, node);
+      }
     }
   }
   
-  search(startNode, destinationNode, 0);
+  search(startNode, destinationNode);
   return directions;
 }
 
