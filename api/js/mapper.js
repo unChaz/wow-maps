@@ -43,7 +43,7 @@ mapper.edgeHeuristic = function(edgeId, goal){
   }
 }
 
-mapper.formDirection = function(node, distance) {
+mapper.formDirection = function(node, distance, type) {
   var direction = {
     location: node.properName, 
     id:       node.id,
@@ -51,7 +51,8 @@ mapper.formDirection = function(node, distance) {
     continent:node.continent,
     xCoord:   node.xCoord, 
     yCoord:   node.yCoord,
-    distance: distance
+    distance: distance,
+    type: type
   }
   return direction;
 }
@@ -85,11 +86,12 @@ var navigate = function(startNode, destinationNode) {
           if(!lowestVal || heuristic < lowestVal) {
             lowestVal = heuristic;
             winningNode = edge;
+            winningNode.type = path.type;
           }
         }
       });
       if(winningNode) {
-        var direction = mapper.formDirection(winningNode, lowestVal);
+        var direction = mapper.formDirection(winningNode, lowestVal, winningNode.type);
         if(winningNode.id == goal.id) {
           direction.goal = true;
         }
