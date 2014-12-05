@@ -1,4 +1,7 @@
 A Google Maps for World of Warcraft 
+
+http://youtu.be/U27Fz8mVAvw
+
 Getting Started
 ---------------
 
