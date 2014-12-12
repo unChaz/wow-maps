@@ -10,6 +10,17 @@ var mapper = {
 };
 
 /*
+A Heuristic to measure the distance between the node and 
+the given set of coordinates.
+*/
+mapper.distanceToNodeFromCoords = function(node, coords) {
+    var xDelta = (node.xCoord - coords.x);
+    var yDelta = (node.yCoord - coords.y);
+    var xSquared = Math.pow(xDelta, 2) || 1;
+    var ySquared = Math.pow(yDelta, 2) || 1;
+    return Math.sqrt(xSquared + ySquared);
+}
+/*
 A Heuristic to measure the distance from one 
 node to another that are in the same zone.
 */
@@ -29,8 +40,8 @@ mapper.distanceToOtherZoneNode = function(node, goal) {
   var zoneBorder = zones[node.zone][goal.zone].borderCoordinates;
   var goalBorder = zones[goal.zone][node.zone].borderCoordinates;
   var zoneToZoneDistance = zones[goal.zone][node.zone].travelTime;
-  var distanceToGoal = mapper.distanceToNode(node, goalBorder);
-  var distanceToNode = mapper.distanceToNode(node, zoneBorder);
+  var distanceToGoal = mapper.distanceToNodeFromCoords(goal, goalBorder);
+  var distanceToNode = mapper.distanceToNodeFromCoords(node, zoneBorder);
   return (distanceToNode + zoneToZoneDistance + distanceToGoal);
 }
 
@@ -57,52 +68,101 @@ mapper.formDirection = function(node, distance, type) {
   return direction;
 }
 
-var navigate = function(startNode, destinationNode) {
-  var directions = [
-    {
-      start:     true,
-      location:  startNode.properName,
-      id:        startNode.id,
-      zone:      startNode.zone,
-      continent: startNode.continent,
-      xCoord:    startNode.xCoord,
-      yCoord:    startNode.yCoord,
-    }
-  ];
-  
-  function search(node, goal, last) {
-    if(node.id === goal.id) {
-      return;
-    } else {
-      var lowestVal;
-      var winningNode;
-      node.edges.forEach(function(edgeId) {
-        if(last && last.id == edgeId){
-          //do nothing
-        } else {
-          var heuristic = mapper.edgeHeuristic(edgeId, goal);
-          var edge = locationsObj[edgeId];
-          var path = node.paths[edgeId];
-          if(!lowestVal || heuristic < lowestVal) {
-            lowestVal = heuristic;
-            winningNode = edge;
-            winningNode.type = path.type;
+var navigate = function (startNode, destinationNode) {
+    var directions = [];
+
+  function search(start, goal) {
+      //Create an open list of nodes to be evaluated.
+      var openList = [];
+
+      //Create a closed list of nodes already evaluated.
+      var closedList = [];
+
+      //Establish starting node's g, h, and f values, as well as its parent.
+      start.g = 0;
+      start.h = mapper.edgeHeuristic(start.id, goal);
+      start.f = start.g + start.h;
+      start.parent = null;
+
+      //Add starting node to the open list.
+      openList.push(start);
+
+      //Search while the open list contains nodes.
+      while (openList.length > 0) {
+          
+          //Select the open list node with the lowest f value.
+          var lowestIndex = 0;
+          for (var i = 0; i < openList.length; i++) {
+              if (openList[i].f < openList[lowestIndex].f) {
+                  lowestIndex = i;
+              }
           }
-        }
-      });
-      if(winningNode) {
-        var direction = mapper.formDirection(winningNode, lowestVal, winningNode.type);
-        if(winningNode.id == goal.id) {
-          direction.goal = true;
-        }
-        directions.push(direction);
-        search(winningNode, goal, node);
+          var current = openList[lowestIndex];
+
+          //Check if current is the goal. If so, return the solution path.
+          if (current.id === goal.id) {
+              buildSolutionPath(current, goal);
+              return;
+          }
+
+          //Move current from open to closed.
+          openList.splice(openList.indexOf(current), 1);
+          closedList.push(current);
+
+          //Add current's children to the open list.
+          var children = current.edges;
+
+          for (var i = 0; i < children.length; i++) {
+              var child = locationsObj[children[i]];
+              if (checkIfAlreadyVisited(child, closedList)) {
+                  child.g = current.g + mapper.edgeHeuristic(current.id, child);
+                  child.h = mapper.edgeHeuristic(child.id, goal);
+                  child.f = child.g + child.h;
+                  child.parent = current;
+                  openList.push(child);
+              }
+          }
       }
-    }
+  }
+
+  function checkIfAlreadyVisited(node, list) {
+      for (var i = 0; i < list.length; i++) {
+          if (list[i].id === node.id) {
+              return false;
+          }
+      }
+      return true;
+  }
+
+  function buildSolutionPath(node, goal) {
+      var direction;
+      while (node.parent) {
+          direction = mapper.formDirection(node, node.h, node.type);
+          if (node.id === goal.id) {
+              direction.goal = true;
+          }
+          directions.push(direction);
+          node = node.parent;
+      }
+      appendStartLocation();
+  }
+
+  function appendStartLocation() {
+      var startLocation =
+      {
+          start: true,
+          location: startNode.properName,
+          id: startNode.id,
+          zone: startNode.zone,
+          continent: startNode.continent,
+          xCoord: startNode.xCoord,
+          yCoord: startNode.yCoord,
+  };
+      directions.push(startLocation);
   }
   
   search(startNode, destinationNode);
-  return directions;
+  return directions.reverse();
 }
 
 
